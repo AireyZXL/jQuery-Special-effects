@@ -1,8 +1,7 @@
 var ua = navigator.userAgent.toLowerCase();
-var isIE6 = ua.indexOf("msie 6") > -1;//�ж��Ƿ�ΪIE6
+var isIE6 = ua.indexOf("msie 6") > -1;
 
-// remove css image flicker
-//IE6��Ĭ�ϲ����汳��ͼƬ��CSS��ÿ�θ��ͼƬ��λ��ʱ�������·��������������������IE6���汳��ͼƬ
+
 if(isIE6){
     try{
         document.execCommand("BackgroundImageCache", false, true);
